@@ -1,4 +1,7 @@
-﻿namespace Base
+﻿using System;
+
+
+namespace Base
 {
     /// <summary>
     /// Base interface for greeter classes.
@@ -7,5 +10,11 @@
     public interface IGreeter
     {
         string Greeting();
+    }
+
+
+    public static class IGreeterExtensions 
+    {
+        public static void Greet(this IGreeter g) => Console.WriteLine(g.Greeting());
     }
 }

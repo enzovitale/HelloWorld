@@ -1,8 +1,7 @@
-﻿using System;
-
-using Base;
+﻿using Base;
 
 using Derived;
+
 
 namespace HelloWorld
 {
@@ -11,16 +10,16 @@ namespace HelloWorld
         static void Main()
         {
             BaseGreeter g = new Greeter();
-            Console.WriteLine(g.Greeting());
+            g.Greet();
 
             IGreeter g_interface = new Greeter();
-            Console.WriteLine(g_interface.Greeting());
+            g_interface.Greet();
 
-            Greeter g_typed = new Greeter();
-            Console.WriteLine(g_typed.Greeting());
+            var g_typed = new Greeter();
+            g_typed.Greet();
 
-            AlternateGreeter g_Alternate_typed = new AlternateGreeter();
-            Console.WriteLine(g_Alternate_typed.Greeting());
+            var g_Alternate_typed = new AlternateGreeter();
+            g_Alternate_typed.Greet();
         }
     }
 }
