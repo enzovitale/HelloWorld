@@ -9,12 +9,12 @@ namespace Base
     /// </summary>
     public interface IGreeter
     {
-        string Greeting();
+        string Greeting(string? RecipientName = null);
     }
 
 
     public static class IGreeterExtensions 
     {
-        public static void Greet(this IGreeter g) => Console.WriteLine(g.Greeting());
+        public static void Greet(this IGreeter g, string? RecipientName = null) => Console.WriteLine(g.Greeting(RecipientName));
     }
 }
