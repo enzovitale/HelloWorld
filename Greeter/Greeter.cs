@@ -1,5 +1,6 @@
 ﻿using Base;
 
+
 namespace Derived
 {
     /// <summary>
