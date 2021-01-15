@@ -18,6 +18,9 @@ namespace HelloWorld
 
             Greeter g_typed = new Greeter();
             Console.WriteLine(g_typed.Greeting());
+
+            AlternateGreeter g_Alternate_typed = new AlternateGreeter();
+            Console.WriteLine(g_Alternate_typed.Greeting());
         }
     }
 }
