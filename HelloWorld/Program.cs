@@ -9,8 +9,8 @@ namespace HelloWorld
     {
         static void Main()
         {
-            BaseGreeter g = new Greeter();
-            g.Greet();
+            BaseGreeter g_base = new Greeter();
+            g_base.Greet();
 
             IGreeter g_interface = new Greeter();
             g_interface.Greet();
@@ -18,8 +18,8 @@ namespace HelloWorld
             var g_typed = new Greeter();
             g_typed.Greet();
 
-            var g_Alternate_typed = new AlternateGreeter();
-            g_Alternate_typed.Greet();
+            var g_typed_Alternate = new AlternateGreeter();
+            g_typed_Alternate.Greet();
         }
     }
 }

@@ -8,6 +8,6 @@ namespace Derived
     /// </summary>
     public class AlternateGreeter : BaseGreeter
     {
-        public override string Greeting() => "A different, but no less heartfelt, kind of Hello, World!";
+        public override string Greeting(string? RecipientName = null) => $"A different, but no less heartfelt, kind of Hello, {RecipientName ?? "World"}!";
     }
 }
